@@ -1,0 +1,93 @@
+openapi: 3.0.1
+info:
+  title: States
+  description: API para cadastrar e manipular os estados brasileiros
+  version: 0.0.1
+  contact:
+    name: Lorena Lima Pereira
+    email: lorena.pereira.pb@compasso.com.br
+  servers:
+    - url: http://localhost:8080/api/states
+      description: API de manipular estados brasileiros
+  paths:
+    /api/states:
+      get:
+        summary: Lista os estados de acordo com a região.
+        responses:
+          200:
+            description: Sucesso
+            content:
+              application/json:
+                schema:
+                  type: object
+                    properties:
+                      descricao:
+                        type: string
+      post:
+        summary: Cadastra um novo estado
+        requestBody:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  descricao:
+                    type: string
+        responses:
+          200:
+            description: Sucesso
+            content:
+              application/json:
+                schema:
+                  type: object
+                    properties:
+                      descricao:
+                        type: string
+  /api/states/{id}:
+    get:
+      summary: Lista o estado de acordo com seu "id"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            schema:
+              type: object
+                properties:
+                  descricao:
+                    type: string
+          404:
+            description: Estado não encontrado
+            content:
+              application/json:
+                example: "Not Found"
+    put:
+      summary: atualiza dados de estados já cadastrados
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                descricao:
+                  type: string
+        responses:
+          200:
+            description: Sucesso
+            content:
+              application/json:
+                schema:
+                  type: object
+                    properties:
+                      descricao:
+                        type: string
+    delete:
+      summary: Deleta o estado de acordo com seu "id"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            schema:
+              type: object
+                properties:
+                  descricao:
+                    type: string

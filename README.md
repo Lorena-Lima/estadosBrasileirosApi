@@ -2,6 +2,10 @@
 <p><b>JDK:</b> 11</p>
 <p><b>Banco de Dados: </b>H2</p>
 <p>
+<p> O arquivo .yaml contendo o swagger da minha API encontra-se em:<br>
+-  " src/main/java/com/state/State/documents "
+
+</p>
 
 <h3>Projeto iniciado via "Spring Initializr"</h3>
 -Maven Project<br>

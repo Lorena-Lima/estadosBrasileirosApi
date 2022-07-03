@@ -18,7 +18,7 @@
 <p> <h3>Requisições via Postman</h3>
 <b>**POST -/api/states</b><br>
 
--Requisito via Body – raw – JSON<br>
+-Requisição via Body – raw – JSON<br>
 -Ex. de estados para serem inseridos tipo JSON:<br>
 {<br>
     "name":"São Paulo",<br>
@@ -94,11 +94,16 @@
 <b>**GET -/api/states/{id}</b><br>
 -Requisição via parâmetro na URL<br><br>
 <b>**GET -/api/states</b><br>
--Requisito via parâmetro na URL.<br>
+-Requisição via parâmetro na URL.<br>
 -URL = http://localhost:8080/api/states?region= {nome da região a ser pesquisada}<br><br>
 <b>**PUT -/api/states/{id} </b><br>
--Requisito via Body – raw – JSON<br><br>
+-Requisição via Body – raw – JSON<br><br>
 <b>**DELETE -/api/states/{id}</b><br>
--Requisito via parâmetro na URL.<br>
+-Requisição via parâmetro na URL.<br>
 -URL = http://localhost:8080/api/states/ {ID do estado que se deseja deletar}<br>
 </p>
+
+<p>
+-Tentei de várias maneiras ordenar meus objetos pela população e pela área,<br>
+além de validar o campo "region" para só realizar o cadastro conforme solicitado na avaliação.<br>
+Infelizmente não consegui realizar esses requisitos.<br> </p>

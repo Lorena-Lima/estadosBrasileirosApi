@@ -1,4 +1,6 @@
 <h2>Documentação</h2>
+<p><b>Trata-se de uma API Rest construida para gerenciamento dos estados brasileiros
+onde é possivel realizar o cadastro, exclusão, atualização de busca dos estados.</b></p>
 <p><b>JDK:</b> 11</p>
 <p><b>Banco de Dados: </b>H2</p>
 <p>
@@ -107,7 +109,3 @@
 -URL = http://localhost:8080/api/states/ {ID do estado que se deseja deletar}<br>
 </p>
 
-<p>
--Tentei de várias maneiras ordenar meus objetos pela população e pela área,<br>
-além de validar o campo "region" para só realizar o cadastro conforme solicitado na avaliação.<br>
-Infelizmente não consegui realizar esses requisitos.<br> </p>
